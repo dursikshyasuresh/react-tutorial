@@ -13,6 +13,8 @@ const App = () => {
       
        {/* footer */}
        <Footer />
+
+       <h1>This is updated code.</h1>
     </div>
   )
 }
