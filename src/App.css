@@ -1,0 +1,8 @@
+.btnn{
+    border: none;
+    background-color: hsl(352, 93%, 47%);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
