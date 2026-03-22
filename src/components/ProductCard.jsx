@@ -1,3 +1,5 @@
+import Button from "./ui/button"
+
 const ProductCard = ({title,price,category}) => {
   return (
     <div className="border border-gray-300 rounded-xl p-4 shadow">
@@ -15,9 +17,14 @@ const ProductCard = ({title,price,category}) => {
         ${price}
        </p>
 
-      <button className="block bg-slate-800 text-white w-full py-2 rounded-xl mt-6">
+      <Button className="w-full mt-4" variant="secondary">
         Add to cart
-      </button>
+      </Button>
+
+      <Button className="w-full mt-2">
+        Buy Now
+      </Button>
+
     </div>
   )
 }

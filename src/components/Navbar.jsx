@@ -1,3 +1,5 @@
+import Button from "./ui/button"
+
 const Navbar = () => {
   return (
     <nav className="border-b border-slate-300 bg-white py-4 shadow">
@@ -14,6 +16,17 @@ const Navbar = () => {
           <li>Contact</li>
           <li>Products</li>
         </ul>
+
+        <div className="space-x-4">
+          <Button>
+            login
+          </Button>
+
+          <Button variant="outline">
+            register
+          </Button>
+        </div>
+
       </div>
     </nav>
   )
