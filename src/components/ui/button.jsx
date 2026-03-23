@@ -1,5 +1,4 @@
-import clsx from "clsx"
-import { twMerge } from "tailwind-merge"
+import { cn } from "../../libs/utils"
 
 const Button = ({ children, className, variant = "primary" }) => {
   const variants = {
@@ -10,13 +9,13 @@ const Button = ({ children, className, variant = "primary" }) => {
 
   return (
     <button
-      className={twMerge(
-        clsx(
+      className={
+        cn(
           "px-4 py-2 rounded-md cursor-pointer",
-          className,
-          variants[variant]
+           className,
+           variants[variant]
         )
-      )}
+      }
     >
       {children}
     </button>
